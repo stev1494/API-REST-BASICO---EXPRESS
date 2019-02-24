@@ -13,14 +13,19 @@ app.set('json spaces',2);
 //MIDDLEWARE
 /*Todo esto se hace para poder entender los archivos que 
 se van requiriendo en mi aplicacion */
+
+
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 
 //RUTAS
+
 app.use(require('./routes/index'));
 app.use('/api/movies',require('./routes/movies'));
+app.use('/api/users' , require('./routes/users'));
+
 
 // Empezando el servidor
 app.listen(app.get('port'),() => {

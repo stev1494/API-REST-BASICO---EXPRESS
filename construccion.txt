@@ -1,0 +1,30 @@
+npm init --yes
+
+-crea un package json que describe nuestro proyecto.
+--------------------------------------------------------------------------------------
+
+npm i express morgan
+
+modulos que me permiten crear el servidor.
+Morgan permite ver el json por console o los datos que van llegando
+al servido
+.Este es un middleware , que es un intermediario que procesa
+datos antes que mi servidor los reciba.
+Express permite una mejor escritura para el servidor node.
+----------------------------------------------------------------------------------------------
+
+node nombreruta/archivo.js
+Para ejecutar archivos en consola
+-----------------------------------------------------------------------------------
+nodemon
+npm i nodemon -D
+-D : me permite ejecutar a nodemon como una dependencia de desarrollo
+
+luego creamos en script nuestro propio comando y en consola lo corremos asi
+npm run nombre_script
+
+
+-------------------------------------------------------------------------------------------
+underscore
+npm i underscore
+Esta biblioteca nos provee mas funcionalidades para el manejo de datos ,arreglos  etc.
